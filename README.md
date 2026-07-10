@@ -228,7 +228,7 @@ Example:
 
   "verification_notes": "Manually verified against official documentation."
 }
-
+```
 # Validation Pipeline
 
 After generating the dataset, automated checks were performed.
