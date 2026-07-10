@@ -346,13 +346,7 @@ ai-product-ops-research-agent/
 │   └── results.json
 │
 ├── prompts/
-│   └── research_agent_prompt.md
-│
-├── schemas/
-│   └── output_schema.json
-│
-├── analysis/
-│   └── insights.md
+│   └── research_agent_prompt.txt
 │
 └── html/
     └── index.html
@@ -386,7 +380,11 @@ Example:
 
 ## Step 2: Run Research Agent
 
-Provide the application list and research prompt to the AI agent.
+Provide the application list along with the research prompt:
+
+prompts/research-agent-prompt.md
+
+to the AI research agent in Google AI Studio Agent Playground.
 
 The output is:
 
@@ -406,6 +404,9 @@ Run validation checks:
 - Duplicate detection
 - Missing fields
 - Confidence review
+- human intervention needed true etc
+
+I validated the results.json in python but you can validate it with AI tools as well.
 
 ---
 
@@ -416,6 +417,8 @@ Verify samples against:
 - Official developer documentation
 - API references
 - MCP repositories
+
+manually and update if any inconsistencies. 
 
 ---
 
