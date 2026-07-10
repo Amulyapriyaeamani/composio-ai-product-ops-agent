@@ -176,25 +176,58 @@ Classified as:
 
 # Output Schema
 
-Each application is converted into structured JSON:
+Each application is converted into structured integration intelligence.
+
+Example:
 
 ```json
 {
-  "app_name": "",
-  "category": "",
-  "raw_auth_methods": [],
-  "normalized_auth_methods": [],
-  "api_types": [],
-  "mcp_exists": "",
-  "buildability_verdict": "",
-  "blocker": "",
-  "evidence_urls": [],
-  "confidence_score": 0,
-  "human_intervention_required": false
-}
-```
+  "app_name": "Salesforce",
+  "category": "CRM and Sales",
 
----
+  "raw_auth_methods": [
+    "OAuth 2.0 with PKCE",
+    "JWT Bearer Flow",
+    "Session ID"
+  ],
+
+  "normalized_auth_methods": [
+    "OAuth2",
+    "JWT",
+    "Token"
+  ],
+
+  "self_serve_or_gated": "Self-Serve",
+
+  "api_types": [
+    "REST",
+    "GraphQL",
+    "SDK",
+    "Webhooks",
+    "MCP"
+  ],
+
+  "api_breadth": "Broad",
+
+  "mcp_exists": "Yes",
+  "mcp_type": "Official",
+
+  "buildability_verdict": "Ready",
+
+  "blocker": "None",
+
+  "evidence_urls": [
+    "official documentation URLs"
+  ],
+
+  "confidence_score": 100,
+
+  "human_intervention_required": false,
+
+  "verification_status": "Reviewed",
+
+  "verification_notes": "Manually verified against official documentation."
+}
 
 # Validation Pipeline
 
